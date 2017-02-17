@@ -71,11 +71,11 @@ Vagrant.configure("2") do |config|
      sudo curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
      sudo apt-get install -y nodejs
      curl https://install.meteor.com/ | sh
-     meteor update --patch
      sudo npm install -g reaction-cli
      cd ~/
      reaction init
      cd ~/reaction
+     meteor update --patch
      reaction run
    SHELL
 end
